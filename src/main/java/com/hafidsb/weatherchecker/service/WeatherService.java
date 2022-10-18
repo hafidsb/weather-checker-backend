@@ -25,6 +25,7 @@ public class WeatherService {
                 .get()
                 .uri(uriBuilder -> uriBuilder.path("/weather")
                         .queryParam("appid", this.apiKey)
+                        .queryParam("units", "metric")
                         .queryParam("lat", latitude)
                         .queryParam("lon", longitude)
                         .build())
