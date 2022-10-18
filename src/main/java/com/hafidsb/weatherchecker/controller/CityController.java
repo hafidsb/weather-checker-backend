@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cities")
 @RequiredArgsConstructor
+@RequestMapping("/cities")
 public class CityController {
 
     private final CityService cityService;
@@ -19,6 +19,12 @@ public class CityController {
     @GetMapping
     public List<CityEntity> all() {
         return cityService.findAll();
+    }
+
+    @GetMapping("/capitals")
+    public List<CityEntity> allCapitals() {
+        // System.out.println(cityService.findAllCapitals().get(0).getId());
+        return cityService.findAllCapitals();
     }
 
 }
