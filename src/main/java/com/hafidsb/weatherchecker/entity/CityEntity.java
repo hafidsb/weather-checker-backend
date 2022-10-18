@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Table(name = "cities")
+@SuppressWarnings("unused variable")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CityEntity {
     @Id

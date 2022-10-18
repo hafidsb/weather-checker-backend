@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/cities")
+@SuppressWarnings("unused variable")
 public class CityController {
 
     private final CityService cityService;
@@ -23,7 +24,6 @@ public class CityController {
 
     @GetMapping("/capitals")
     public List<CityEntity> allCapitals() {
-        // System.out.println(cityService.findAllCapitals().get(0).getId());
         return cityService.findAllCapitals();
     }
 

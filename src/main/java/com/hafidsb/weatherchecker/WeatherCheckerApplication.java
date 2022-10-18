@@ -12,20 +12,16 @@ import org.springframework.context.annotation.Bean;
 
 import javax.transaction.Transactional;
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Slf4j
 @SpringBootApplication
+@SuppressWarnings("unused method")
 public class WeatherCheckerApplication {
 
-	private final String JSON_PATH;
-
-	public WeatherCheckerApplication(
-		@Value("${INITIAL_CITY_JSON_PATH}") String value) {
-		this.JSON_PATH = value;
-	}
+	@Value("${INITIAL_CITY_JSON_PATH}")
+	private String jsonPath;
 
 	public static void main(String[] args) {
 		SpringApplication.run(WeatherCheckerApplication.class, args);
@@ -40,7 +36,7 @@ public class WeatherCheckerApplication {
 				List<CityEntity> cities =
 						Arrays.asList(
 								mapper.readValue(
-										new File(JSON_PATH),
+										new File(jsonPath),
 										CityEntity[].class
 								));
 				repository.saveAll(cities);
