@@ -31,6 +31,6 @@ public class CityService {
                         "Melbourne", "Perth"
                 );
 
-        return repository.findByNameInAndCapitalNot(capitals, "");
+        return repository.findByNameInAndCapitalNotOrderByNameAsc(capitals, "");
     }
 }
