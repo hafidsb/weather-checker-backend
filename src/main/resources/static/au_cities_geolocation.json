@@ -34,8 +34,8 @@
   }, 
   {
     "city_name": "Perth", 
-    "lat": "-31.9522", 
-    "lng": "115.8589", 
+    "lat": "-31.9333",
+    "lng": "115.8333",
     "country": "Australia", 
     "iso2": "AU", 
     "admin_name": "Western Australia", 
@@ -177,8 +177,8 @@
   }, 
   {
     "city_name": "Darwin", 
-    "lat": "-12.4381", 
-    "lng": "130.8411", 
+    "lat": "-12.4611",
+    "lng": "130.8418",
     "country": "Australia", 
     "iso2": "AU", 
     "admin_name": "Northern Territory", 
