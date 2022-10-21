@@ -5,4 +5,4 @@ logging.level.net.ttddyy.dsproxy.listener=DEBUG
 
 INITIAL_CITY_JSON_PATH=src/main/resources/static/au_cities_geolocation.json
 WEATHER_API_BASE_URL=https://api.openweathermap.org/data/2.5
-WEATHER_API_KEY=c24a4c21725a212abacf9ad696ce2d16
+WEATHER_API_KEY=
