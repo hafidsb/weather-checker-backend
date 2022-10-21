@@ -17,7 +17,7 @@ Name | Method | Parameter | Response
 /weather/city/{id} | GET | id(Long) | get weather info by city Id
 
 ## Third party API Usage
-Here I am using [open weather map API](https://openweathermap.org/current). To use it you have to get API key that you can get by signing up their website. 
+Here I am using [open weather map API](https://openweathermap.org/current). To use it you have to get API key that you can get by signing up on their website. 
 The API key then must be presented on every request to it in the form of request parameter with `appid` key.
 
 Usage example:
