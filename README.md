@@ -7,6 +7,8 @@
 2. Navigate to `./weather-checker-backend` directory
 3. Run `mvn install && mvn spring-boot:run`
 4. The development web can be accessed at `http://localhost:8080`
+5. Copy the content of `application.properties.example` to a new file named `application.properties`
+6. Fill the `WEATHER_API_KEY` variable at `application.properties` that has just been created by key you get after signing in on the [website]( https://openweathermap.org/)
 
 ## Available endpoints
 Name | Method | Parameter | Response
