@@ -8,7 +8,9 @@
 3. Run `mvn install && mvn spring-boot:run`
 4. The development web can be accessed at `http://localhost:8080`
 5. Copy the content of `application.properties.example` to a new file named `application.properties`
-6. Fill the `WEATHER_API_KEY` variable at `application.properties` that has just been created by key you get after signing in on the [website]( https://openweathermap.org/)
+6. Fill the `WEATHER_API_KEY` variable at `application.properties` that has just been created by key you get after signing in on the [website]( https://openweathermap.org/)[^1]
+
+[^1]: (you might have to wait for a couple of hours before new the new API key can be used)
 
 ## Available endpoints
 Name | Method | Parameter | Response
