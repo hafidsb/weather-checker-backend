@@ -11,7 +11,7 @@
 ## Available endpoints
 Name | Method | Parameter | Response
 --- | --- | --- | ---
-/cities | GET | None | get all city in Australia
+/cities | GET | None | get all cities in Australia
 /cities/capitals | GET | None | get all capitals of Australia's State
 /weather | GET | lat(String), lon(String) | get the weather info on the provided location
 /weather/city/{id} | GET | id(Long) | get weather info by city Id
