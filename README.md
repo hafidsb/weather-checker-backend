@@ -4,11 +4,12 @@
 
 ## Local installation steps
 1. Clone the repository
-2. Navigate to `./weather-checker-backend` directory
+2. Navigate to `./weather-checker-backend/src/main/resources` directory
 3. Copy the content of `application.properties.example` to a new file named `application.properties`
-4. Run `mvn install && mvn spring-boot:run`
-5. The development web can be accessed at `http://localhost:8080`
-6. Fill the `WEATHER_API_KEY` variable at `application.properties` that has just been created by key you get after signing in on the [website]( https://openweathermap.org/)[^1]
+4. Navigate to `./weather-checker-backend` directory
+5. Run `mvn install && mvn spring-boot:run`
+6. The development web can be accessed at `http://localhost:8080`
+7. Fill the `WEATHER_API_KEY` variable at `application.properties` that has just been created by key you get after signing in on the [website]( https://openweathermap.org/)[^1]
 
 [^1]: (you might have to wait for a couple of hours before new the new API key can be used)
 
